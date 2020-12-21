@@ -5,8 +5,7 @@
 replicaCount: 5
 
 image:
-  repository: fsadykov/hello-world
-  tag: latest
+  repository: ${deployment_image}
   pullPolicy: IfNotPresent
 
 app:
@@ -34,13 +33,13 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # kubernetes.io/tls-acme: "true"
   hosts:
-  - host: hello.fuchicorp.com
+  - host: ${deployment_endpoint}
     paths:
     - /
   tls:
   - secretName: hello-world-tls
     hosts:
-    - hello.fuchicorp.com
+    - ${deployment_endpoint}
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
