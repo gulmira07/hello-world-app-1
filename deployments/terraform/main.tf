@@ -6,5 +6,6 @@ module "helm_deploy" {
   deployment_path           = "hello-world"     
   template_custom_vars = {
     deployment_image        = "${var.deployment_image}"
+    deployment_environment  = "${var.deployment_environment}"
   }          
 }

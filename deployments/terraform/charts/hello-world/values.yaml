@@ -16,7 +16,7 @@ globalEnvironments:
 
   environments:
   - name: ENVIRONMENT
-    value: PROD
+    value: ${deployment_environment}
   
 imagePullSecrets: []
 nameOverride: ""
