@@ -1,7 +1,6 @@
 variable "deployment_environment" {
     default = "dev"
-    description = "- (Optional) The namespace to deploy the helm chart."
-}
+    }
 
 variable "deployment_name" {
     default = "hello-world"
@@ -15,15 +14,13 @@ variable "deployment_image" {
 
 variable "deployment_endpoint" {
     type = "map"
-
     default = {
-        dev     = "dev.hello.seckinemrah.com"
-        qa      = "qa.hello.seckinemrah.com"
-        prod    = "hello.seckinemrah.com"
-        stage   = "stage.hello.seckinemrah.com"
+        dev     = "dev.hello."
+        qa      = "qa.hello."
+        prod    = "hello."
+        stage   = "stage.hello."
     }
-
-    description = "- (Optional) The endpooint of the deployment."
 }
-
-
+variable "google_domain_name" {
+    default = "seckinemrah.com"
+}
