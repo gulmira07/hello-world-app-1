@@ -15,10 +15,10 @@ variable "deployment_image" {
 variable "deployment_endpoint" {
     type = "map"
     default = {
-        dev     = "dev.hello."
-        qa      = "qa.hello."
-        prod    = "hello."
-        stage   = "stage.hello."
+        dev     = "dev.hello"
+        qa      = "qa.hello"
+        prod    = "hello"
+        stage   = "stage.hello"
     }
 }
 variable "google_domain_name" {
