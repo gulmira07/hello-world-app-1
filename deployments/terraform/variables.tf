@@ -22,5 +22,5 @@ variable "deployment_endpoint" {
     }
 }
 variable "google_domain_name" {
-    default = "seckinemrah.com"
+    default = "hasantutac.com"
 }
